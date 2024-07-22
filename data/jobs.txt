@@ -180,6 +180,16 @@ mission "Add Gegno Licenses"
 		set "license: Scin Adjutant"
 		fail
 
+mission "Add Incipias License"
+	repeat
+	job
+	source
+		attributes forge
+	description "Gives you the Hicemus Conflict License."
+	on accept
+		set "license: Hicemus Conflict"
+		fail
+
 mission "Remove Licenses"
 	repeat
 	job
@@ -210,6 +220,7 @@ mission "Remove Licenses"
 		clear "license: Scin Hoplologist"
 		clear "license: Scin Architect"
 		clear "license: Scin Adjutant"
+		clear "license: Hicemus Conflict"
 		fail
 
 mission "Reset Reputation"
@@ -226,16 +237,20 @@ mission "Reset Reputation"
 		"reputation: Bounty (Disguised)" = 1
 		"reputation: Bounty Hunter" = -1000
 		"reputation: Coalition" = 1
+		"reputation: Conlatio" = 0
 		"reputation: Deep" = -1000
 		"reputation: Deep Security" = 1
 		"reputation: Derelict" = 0
 		"reputation: Drak" = 1
 		"reputation: Drak (Hostile)" = -1000
+		"reputation: Drak (Incipias)" = 0
 		"reputation: Free Worlds" = 1
 		"reputation: Hai" = 0
 		"reputation: Hai (Wormhole Access)" = 0
 		"reputation: Hai (Unfettered)" = -1000
 		"reputation: Heliarch" = 1
+		"reputation: Hicemus" = 0
+		"reputation: Incipias Civilian" = 0
 		"reputation: Independent" = 10
 		"reputation: Independent (Killable)" = 10
 		"reputation: Indigenous Lifeform" = 1
@@ -258,8 +273,10 @@ mission "Reset Reputation"
 		"reputation: Pug" = 1
 		"reputation: Pug (Wanderer)" = 1
 		"reputation: Quarg" = 1
+		"reputation: Quarg (Incipias)" = 1
 		"reputation: Remnant" = 1
 		"reputation: Republic" = 2
+		"reputation: Silent Ones" = 1
 		"reputation: Syndicate" = 2
 		"reputation: Syndicate (Extremist)" = -1000
 		"reputation: Test Dummy" = -1000
@@ -820,4 +837,3 @@ mission "Hostile Gegno Vi"
 	on accept
 		"reputation: Gegno Vi" = -100000
 		fail
-
