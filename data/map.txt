@@ -736,6 +736,7 @@ system "Team Blue"
 	habitable 8640
 	link "Team Red"
 	link Arena
+	link Successors
 	link Wanderer
 	asteroids "small rock" 2 3.9627
 	asteroids "medium rock" 3 4.4982
@@ -790,6 +791,66 @@ system "Team Blue"
 			sprite planet/dust0
 			distance 502
 			period 48.0539
+
+system Successors
+	pos -9820.108 -10035.952
+	habitable 955.249
+	belt 1535 9
+	belt 2444
+	link Remnant
+	asteroids "small rock" 25 2.365
+	asteroids "medium rock" 2 2.398
+	asteroids "large rock" 11 1.685
+	asteroids "small metal" 42 2.981
+	asteroids "medium metal" 72 1.782
+	asteroids "large metal" 31 2.981
+	minables silver 20 2.491
+	minables uranium 20 3.848
+	object
+		sprite star/k5-old
+		distance 7.754
+		period 185.48
+		offset 180
+	object
+		sprite planet/ice5-b
+		distance 623
+		period 201.249
+	object
+		sprite planet/rock4
+		distance 1023
+		period 423.463
+	object
+		sprite planet/water0
+		distance 1507
+		period 757.132
+	object
+		sprite planet/gas12-b
+		distance 2419
+		period 1539.769
+		object
+			sprite planet/rock0
+			distance 310
+			period 206.321
+		object
+			sprite "planet/yniu ena"
+			distance 434
+			period 341.771
+	object
+		sprite planet/gas0-b
+		distance 5521
+		period 5309.192
+	object
+		sprite planet/gas7-r
+		distance 7524
+		period 8446.464
+		object
+			sprite planet/europa
+			distance 408
+			period 389.854
+		object
+			sprite planet/rock14-b
+			distance 550
+			period 337.568
 
 system "Team Red"
 	pos -10109.6 -10212.4
